@@ -67,6 +67,12 @@ This will:
 - Start `templ` in watch mode
 - Start the Go server with `air` for live reload
 
+### 5. Run and watch tailwinds changes
+
+```sh
+make tailwind
+```
+
 ---
 
 ## 🔨 Other Make Targets
@@ -76,6 +82,7 @@ This will:
 | `make build`         | Build production binary in `bin/`                    |
 | `make build-local`   | Build binary to `bin/main`                           |
 | `make templ`         | Run `templ generate` with live proxy (watch mode)    |
+| `make tailwind`      | Watch the tailwinds                                    |
 | `make notify`        | Notify proxy-only templ generate mode                |
 
 ---
@@ -98,6 +105,10 @@ gotailwinds/
 
 ---
 
+## 📄 Demo
+https://github.com/radiaku/gotailwindsdemo
+
+---
 ## 📄 License
 
 MIT
