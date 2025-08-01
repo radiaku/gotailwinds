@@ -12,8 +12,8 @@ install:
 
 init:
 	@npx tailwindcss init
-	@echo "Creating tailwind.css..."
 	@mkdir -p static/css
+	@printf "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n" > static/css/input.css
 	@npm run dev
 
 build-local:
