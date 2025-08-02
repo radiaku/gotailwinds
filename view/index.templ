@@ -1,15 +1,27 @@
 package view
 
+
+import (
+    "go_tailwindws/view/layout"
+    partial "go_tailwindws/view/partial"
+    pages "go_tailwindws/view/pages"
+)
+
 templ Index() {
-    <header>
-        <h1 class="text-center text-3xl font-bold">
-            Hello, World
-        </h1>
-    </header>
-    <div class="flex justify-center mt-10 text-center xl-">
-        <!-- HTMX here -->
-        <button hx-get="/foo" class="btn bg-teal-200 p-4 rounded-lg">
-            FOO
-        </button>
-    </div>
+    @layout.Base(content())
 }
+
+templ content() {
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="md:col-span-1">
+            @partial.Sidebar()
+        </div>
+        <div class="md:col-span-3">
+            @pages.Profile()
+        </div>
+    </div>
+
+    @partial.Footer()
+}
+
+
