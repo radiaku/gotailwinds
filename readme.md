@@ -105,7 +105,7 @@ gotailwinds/
 
 ---
 
-## 📄 Demo
+## ★ Demo
 https://github.com/radiaku/gotailwindsdemo
 
 ---
